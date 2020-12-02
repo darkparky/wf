@@ -39,7 +39,7 @@ jobs:
        - name: Compilation
          continue-on-error: true
          run: |
-           sudo mv source/* bot/
+           sudo cp source/* bot/
            sudo rm -rf source
            cd bot
            docker container prune --force
